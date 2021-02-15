@@ -46,5 +46,13 @@ namespace Summeries.Controllers
             _service.DeleteBook(id);
             return Ok();
         }
+
+        //Get a single book by id
+        [HttpGet("SingleBook/{id}")]
+        public IActionResult GetBookById(int id)
+        {
+            var book = _service.GetBookById(id);
+            return Ok(book);
+        }
     }
 }
