@@ -13,6 +13,14 @@ namespace Summeries.Controllers
         {
             _service = service;
 
+        }        
+
+        //Create/Add a new book
+        [HttpPost("AddBook")]
+        public IActionResult AddBook([FromBody]Book book)
+        {
+            _service.AddBook(book);
+            return Ok("Added");
         }
     }
 }
