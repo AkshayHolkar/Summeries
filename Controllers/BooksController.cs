@@ -38,5 +38,13 @@ namespace Summeries.Controllers
             _service.updateBook(id, book);
             return Ok(book);
         }
+
+        //Delete a book
+        [HttpDelete("DeleteBook/{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            _service.DeleteBook(id);
+            return Ok();
+        }
     }
 }

@@ -12,7 +12,8 @@ namespace Summeries.Data
 
         public void DeleteBook(int id)
         {
-            throw new System.NotImplementedException();
+            var book = Data.Books.FirstOrDefault(n => n.Id == id);
+            Data.Books.Remove(book);
         }
 
         public List<Book> GetAllBooks()
