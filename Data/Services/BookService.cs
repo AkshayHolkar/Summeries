@@ -27,7 +27,11 @@ namespace Summeries.Data
 
         public void updateBook(int id, Book newBook)
         {
-            throw new System.NotImplementedException();
+            var oldBook = Data.Books.FirstOrDefault(n => n.Id == id);
+            if(oldBook != null)
+            {
+                oldBook = newBook;
+            }
         }
     }
 }
