@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Summeries.Data
 {
@@ -16,7 +17,7 @@ namespace Summeries.Data
 
         public List<Book> GetAllBooks()
         {
-            throw new System.NotImplementedException();
+            return Data.Books.ToList();
         }
 
         public Book GetBookById(int id)
