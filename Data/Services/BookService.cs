@@ -31,7 +31,14 @@ namespace Summeries.Data
             var oldBook = Data.Books.FirstOrDefault(n => n.Id == id);
             if(oldBook != null)
             {
-                oldBook = newBook;
+                oldBook.Id = newBook.Id;
+                oldBook.Title = newBook.Title;
+                oldBook.Author = newBook.Author;
+                oldBook.Description = newBook.Description;
+                oldBook.Rate = newBook.Rate;
+                oldBook.DateStart = newBook.DateStart;
+                oldBook.DateRead = newBook.DateRead;
+
             }
         }
     }
