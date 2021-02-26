@@ -12,7 +12,10 @@ export class BookService {
 
   getAllBooks(){
     return this.http.get<Book[]>(this._baseURL+"/GetBooks");
-    
+  }
+
+  addBook(book:Book){
+    return this.http.post<Book[]>(this._baseURL+"/AddBook/", book);
   }
 
 
