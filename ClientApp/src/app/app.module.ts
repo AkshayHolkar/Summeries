@@ -12,7 +12,7 @@ import { DeleteBookComponent } from './components/delete-book/delete-book.compon
 import { NewBookComponent } from './components/new-book/new-book.component';
 import { ShowBookComponent } from './components/show-book/show-book.component';
 import { UpdateBookComponent } from './components/update-book/update-book.component';
-import { BookService } from './Services/book.service';
+import { BookService } from './services/book.service';
 
 @NgModule({
   declarations: [
