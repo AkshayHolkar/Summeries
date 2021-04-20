@@ -109,6 +109,5 @@ namespace Summeries.Data
             DateRead = new DateTime(2019,10,28)
         }
     };
-
 }
 }
